@@ -38,6 +38,24 @@ Alternatively, click on the button below to add the repository:
 
 ![config_flow](images/config_flow.png)
 
+- id: '1711231232147237'
+  alias: UpdateAWSSensors
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  condition: []
+  action:
+  - service: homeassistant.update_entity
+    metadata: {}
+    data: {}
+    target:
+      entity_id:
+      - sensor.aws_billing_current_by_tag
+      - sensor.aws_billing_current_month
+      - sensor.aws_billing_forecast_month
+  mode: single
+
 
 <!---->
 
