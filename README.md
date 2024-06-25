@@ -1,4 +1,6 @@
 # AWS Cost Explorer
+This is a custom component of Home Assistant.
+
 
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
@@ -6,15 +8,19 @@
 
 ![Project Maintenance][maintenance-shield]
 
-_Integration to integrate with [hass-aws-cost-explorer][hass-aws-cost-explorer]._
+Default Sensors:
+
+![default_sensors](images/aws_ce_default_sensors.png)
+
+## Features
+
+This custom component allows you monitor your AWS account via Cost Explorer API for the current, forecasted and by tag.
 
 **This integration will set up the following platforms.**
 
 Platform | Description
 -- | --
-`binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from blueprint API.
-`switch` | Switch something `True` or `False`.
+`sensor` | Show info from AWS Cost Explorer API.
 
 ## Installation
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
@@ -30,11 +36,10 @@ Alternatively, click on the button below to add the repository:
 
 ## Configuration is done in the UI
 
+![config_flow](images/config_flow.png)
+
+
 <!---->
-
-## Contributions are welcome!
-
-If you want to contribute to this please read the [Contribution guidelines](CONTRIBUTING.md)
 
 ***
 
